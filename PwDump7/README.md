@@ -1,1 +1,1 @@
-.\pwdump7.exe > 1.txt
+.\pwdump7.exe
