@@ -1,0 +1,1 @@
+Import-Module .\Invoke-WmiCommand.ps1;$User = "aa8j\administrator";$Password = ConvertTo-SecureString -String "1234567.com" -AsPlainText -Force;$Cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User,$Password;$Remote=Invoke-WmiCommand -Payload {ipconfig} -Credential $Cred -ComputerName 10.1.1.2;$Remote.PayloadOutput
